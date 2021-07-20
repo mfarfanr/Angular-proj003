@@ -1,1 +1,26 @@
-<h1>Hi!</h1>
+<div class="main">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col">
+                <label for="degrees">Degrees</label>
+                <input type="text" id="degrees" size="8" maxlength="8" [formControl]="degreesControl"/>
+            </div>
+            <div class="col">
+                <label for="type">Type</label>
+                <select id="type" [formControl]="typeControl">
+                    <option value="F">Farenheit</option>
+                    <option value="C">Celsius</option>
+                </select>
+            </div>
+            <div class="col">
+                <button type="button" id="convert" (click)="onClick()">Convert</button>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="results">Results</label>
+                <span id="results">{{ results }}</span>
+            </div>
+        </div>
+    </div>
+</div>

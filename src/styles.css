@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: #454545;
+    font-weight: normal;    
+}
+
+body {
+    padding: 40px;
+    background-color: #f2f2f2;
+}
